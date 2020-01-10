@@ -63,6 +63,7 @@
     "stylelint-order": "^3.0.1"
   },
   "dependencies": {
+    "@vgmqt/access": "^0.0.95",
     "gulp-umd": "^2.0.0",
     "normalize.css": "~8.0.1"
   },
