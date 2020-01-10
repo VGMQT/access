@@ -26,8 +26,9 @@ $.gulp.task(
       'pug',
       'css:vendor',
       'sass',
-      // 'js:app',
-      'js:app-minify',
+      // 'js:vendor',
+      'js:app',
+      // 'js:app-minify',
       'fonts',
       'images'
     ),

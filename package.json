@@ -1,8 +1,8 @@
 {
   "name": "@vgmqt/access",
-  "version": "0.0.9",
+  "version": "0.0.8",
   "description": "A lightweight pack of accessible customizable elements for web development such as Select, Tabs, Checkboxes, etc. It built on HTML5 basic elements and behave itself the exact same way they do",
-  "main": "build/js/umd/app.min.js",
+  "main": "build/js/app.min.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/VGMQT/access.git"
