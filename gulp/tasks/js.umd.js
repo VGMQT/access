@@ -1,12 +1,18 @@
 module.exports = () => {
   $.gulp.task('js:umd', () => {
     return $.gulp
-      .src(`${$.config.build}/js/app.js`)
+      .src($.config.appJS)
+      .pipe(
+        $.gp.babel({
+          presets: ['@babel/env'],
+        })
+      )
+      .pipe($.gp.concat('app.js'))
       .pipe($.gp.umd({
         exports: function (file) {
           return $.config.umd;
         },
-        exports: function (file) {
+        namespace: function (file) {
           return $.config.umd;
         },
       }))

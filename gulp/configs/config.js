@@ -5,7 +5,7 @@ module.exports = {
     './node_modules/normalize.css/normalize.css'
   ],
   vendorJS: [
-    './node_modules/@vgmqt/access/build/js/umd/app.min.js'
+    './node_modules/@vgmqt/access/build/js/app.min.js'
   ],
   appJS: './dev/js/**/*.js',
   umd: 'AccessibleEssentials'
