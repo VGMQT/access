@@ -9,6 +9,7 @@ module.exports = [
   './gulp/tasks/js.vendor.js',
   './gulp/tasks/js.app.js',
   './gulp/tasks/js.app-minify.js',
+  './gulp/tasks/js.umd.js',
   './gulp/tasks/js.lint.js',
   './gulp/tasks/fonts.js',
   './gulp/tasks/images.js',

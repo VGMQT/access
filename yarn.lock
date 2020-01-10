@@ -2184,7 +2184,7 @@ concat-map@0.0.1:
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
 
-concat-stream@1.6.2, concat-stream@^1.6.0:
+concat-stream@1.6.2, concat-stream@^1.6.0, concat-stream@^1.6.2:
   version "1.6.2"
   resolved "https://registry.yarnpkg.com/concat-stream/-/concat-stream-1.6.2.tgz#904bdf194cd3122fc675c77fc4ac3d4ff0fd1a34"
   integrity sha512-27HBghJxjiZtIk3Ycvn/4kbJk/1uZuJFfuPEns6LaEvpvG1f0hTea8lilrouyo9mVc2GWdcEZ8OLoGmSADlrCw==
@@ -4530,6 +4530,15 @@ gulp-svgmin@~2.2.0:
   dependencies:
     plugin-error "^1.0.1"
     svgo "^1.2.1"
+
+gulp-umd@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/gulp-umd/-/gulp-umd-2.0.0.tgz#765f8ad4d91238bef57b3f0b52ed2a223a0bc098"
+  integrity sha512-zA0RDIITdOwpVUBQ6vy2R+iCsTXwDImPnWreNBmVJQAg3nDGefowV7KYwWoIeEVoxyHZT2CR50nEF6ovUh5/2A==
+  dependencies:
+    concat-stream "^1.6.2"
+    lodash.template "^4.4.0"
+    through2 "^2.0.3"
 
 gulp.spritesmith@^6.10.1:
   version "6.11.0"

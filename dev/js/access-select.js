@@ -1,4 +1,4 @@
-module.exports = function accessSelect() {
+const accessSelect = () => {
   const activeClassnameString = 'list-is-open';
   const accessSelects = document.getElementsByClassName('access-select');
 

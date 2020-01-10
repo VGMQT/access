@@ -21,14 +21,17 @@ $.path.tasks.forEach(function(taskPath) {
 
 $.gulp.task(
   'core',
-  $.gulp.parallel(
-    'pug',
-    'css:vendor',
-    'sass',
-    // 'js:app',
-    'js:app-minify',
-    'fonts',
-    'images'
+  $.gulp.series(
+    $.gulp.parallel(
+      'pug',
+      'css:vendor',
+      'sass',
+      // 'js:app',
+      'js:app-minify',
+      'fonts',
+      'images'
+    ),
+    'js:umd'
   )
 );
 
