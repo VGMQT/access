@@ -1,16 +1,12 @@
 (() => {
-  const accessSelect = (
-    selectClassnameString = 'access-select',
-    chosenOptionClass = '.access-select__chosen-option',
-    inputClassnameString = 'access-select__input',
-    activeClassnameString = 'list-is-open'
-  ) => {
-    const accessSelects = document.getElementsByClassName(selectClassnameString);
+  const accessSelect = () => {
+    const activeClassnameString = 'list-is-open';
+    const accessSelects = document.getElementsByClassName('access-select');
 
     for (let i = 0; i < accessSelects.length; i++) {
       const thisAccessSelect = accessSelects[i];
-      const thisChosenOption = thisAccessSelect.querySelector(chosenOptionClass);
-      const theseInputs = thisAccessSelect.getElementsByClassName(inputClassnameString);
+      const thisChosenOption = thisAccessSelect.querySelector('.access-select__chosen-option');
+      const theseInputs = thisAccessSelect.getElementsByClassName('access-select__input');
 
       for (let j = 0; j < theseInputs.length; j++) {
         const specificInput = theseInputs[j];
