@@ -1,0 +1,48 @@
+$accent_color: #03a9f4;
+
+.access-select {
+  position: relative;
+
+  &__chosen-option {
+    cursor: pointer;
+
+    &:hover {
+      color: $accent_color;
+    }
+
+    &.list-is-open {
+      color: $accent_color;
+
+      + .access-select__list {
+        height: auto;
+      }
+    }
+  }
+
+  &__list {
+    position: absolute;
+    z-index: 9999;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    height: 0;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__input {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+
+    &:hover,
+    &:focus {
+      + .access-select__label {
+        color: $accent_color;
+      }
+    }
+  }
+}

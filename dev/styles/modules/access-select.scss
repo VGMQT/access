@@ -1,0 +1,51 @@
+$accent_color: #000000;
+$padding_option: 10px;
+
+.access-select {
+  width: 300px;
+
+  &__option {
+    padding: $padding_option;
+    border: 2px solid transparent;
+  }
+
+  &__chosen-option {
+    position: relative;
+    border-color: $accent_color;
+
+    &::after {
+      @include center(y);
+      top: 35%;
+      right: $padding_option;
+      display: inline-block;
+      padding: 3px;
+      border: solid $accent_color;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      content: '';
+    }
+
+    &.list-is-open {
+      border-color: $accent_color;
+
+      &::after {
+        top: 45%;
+        transform: rotate(-135deg);
+      }
+
+      + .access-select__list {
+        border-color: $accent_color;
+      }
+    }
+  }
+
+  &__list {
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+  }
+
+  &__label {
+    display: block;
+  }
+}
