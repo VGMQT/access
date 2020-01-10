@@ -804,14 +804,6 @@
     "@types/unist" "*"
     "@types/vfile-message" "*"
 
-"@vgmqt/access@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@vgmqt/access/-/access-0.0.7.tgz#d27c8e61346efdacce918f6033f5d21ac57a65f2"
-  integrity sha512-EPrT6qkQJPRAIgIfp2+P4/iQXIDF0dlqRXEZS1pEwbNXrhrFjjYU4oB7s/aIoIN4+lW5vVv8YU5IyBgJTrgBvQ==
-  dependencies:
-    gulp-umd "^2.0.0"
-    normalize.css "~8.0.1"
-
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"

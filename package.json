@@ -1,6 +1,6 @@
 {
   "name": "@vgmqt/access",
-  "version": "0.0.7",
+  "version": "0.0.95",
   "description": "A lightweight pack of accessible customizable elements for web development such as Select, Tabs, Checkboxes, etc. It built on HTML5 basic elements and behave itself the exact same way they do",
   "main": "build/js/app.min.js",
   "repository": {
@@ -63,7 +63,6 @@
     "stylelint-order": "^3.0.1"
   },
   "dependencies": {
-    "@vgmqt/access": "^0.0.7",
     "gulp-umd": "^2.0.0",
     "normalize.css": "~8.0.1"
   },
