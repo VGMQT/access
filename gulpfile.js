@@ -25,24 +25,27 @@ $.gulp.task(
     'pug',
     'css:vendor',
     'sass',
-    // 'js:umd',
-    'js:app-minify',
-    'js:vendor',
-    'fonts',
-    'images'
+    'sass:separated:basic',
+    'sass:separated:styled',
+    'js:umd',
+    'js:umd:separated',
+  )
+);
+
+$.gulp.task(
+  'build',
+  $.gulp.series(
+    'clean',
+    'js:lint',
+    'sass:lint',
+    'core'
   )
 );
 
 $.gulp.task(
   'default',
   $.gulp.series(
-    'clean',
-    'js:lint',
-    'sass:lint',
-    'images:minify',
-    'core',
+    'build',
     $.gulp.parallel('watch', 'serve')
   )
 );
-
-$.gulp.task('build', $.gulp.series('clean', 'images:minify', 'core'));

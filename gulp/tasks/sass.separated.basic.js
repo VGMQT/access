@@ -1,17 +1,20 @@
 module.exports = () => {
-  $.gulp.task('sass', () => {
+  $.gulp.task('sass:separated:basic', () => {
     return $.gulp
-      .src(`${$.config.dev}/styles/AccessEssentials.scss`)
+      .src(`${$.config.dev}/styles/basic/**/*.scss`)
       .pipe($.gp.sassGlob())
       .pipe($.gp.sass())
       .on('error', $.gp.notify.onError({ title: 'Styles' }))
       .pipe($.gp.autoprefixer())
-      .pipe($.gulp.dest(`${$.config.build}/css`))
+      .pipe($.gp.rename({
+        suffix: '.basic'
+      }))
+      .pipe($.gulp.dest(`${$.config.build}/css/Separated`))
       .pipe($.gp.csso())
       .pipe($.gp.rename({
         suffix: '.min'
       }))
-      .pipe($.gulp.dest(`${$.config.build}/css`))
+      .pipe($.gulp.dest(`${$.config.build}/css/Separated`))
       .pipe($.browserSync.stream());
   });
 };

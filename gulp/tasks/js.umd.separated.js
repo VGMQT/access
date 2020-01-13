@@ -1,13 +1,12 @@
 module.exports = () => {
-  $.gulp.task('js:umd', () => {
+  $.gulp.task('js:umd:separated', () => {
     return $.gulp
-      .src($.config.umdJS)
+      .src($.config.umdJSSeparated)
       .pipe(
         $.gp.babel({
           presets: ['@babel/env'],
         })
       )
-      .pipe($.gp.concat('AccessEssentials.js'))
       .pipe($.gp.umd({
         exports: function (file) {
           return $.config.umd;
@@ -23,6 +22,6 @@ module.exports = () => {
           }
         })
       )
-      .pipe($.gulp.dest(`${$.config.build}/js`));
+      .pipe($.gulp.dest(`${$.config.build}/js/Separated`));
   });
 };

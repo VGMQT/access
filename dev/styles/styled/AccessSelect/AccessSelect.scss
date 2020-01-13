@@ -1,0 +1,85 @@
+$main_color: #000000;
+$accent_color: #03a9f4;
+$padding_option: 10px;
+
+.access-select {
+  position: relative;
+  width: 300px;
+
+  &__option {
+    padding: $padding_option;
+    border: 2px solid transparent;
+  }
+
+  &__chosen-option {
+    position: relative;
+    border-color: $main_color;
+    cursor: pointer;
+
+    &:hover {
+      color: $accent_color;
+    }
+
+    &::after {
+      position: absolute;
+      top: calc(50% - 6px);
+      right: $padding_option;
+      display: inline-block;
+      padding: 3px;
+      border: solid $main_color;
+      border-width: 0 2px 2px 0;
+      transform: translate(0, -50%);
+      transform: rotate(45deg);
+      content: '';
+    }
+
+    &.list-is-open {
+      border-color: $main_color;
+      color: $accent_color;
+
+      &::after {
+        top: calc(50% - 3px);
+        transform: rotate(-135deg);
+      }
+
+      + .access-select__list {
+        height: auto;
+        border-color: $main_color;
+      }
+    }
+  }
+
+  &__list {
+    position: absolute;
+    z-index: 9999;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    height: 0;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__input {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+
+    &:hover,
+    &:focus {
+      + .access-select__label {
+        color: $accent_color;
+      }
+    }
+  }
+
+  &__label {
+    display: block;
+  }
+}

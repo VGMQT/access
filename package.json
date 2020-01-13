@@ -1,8 +1,8 @@
 {
   "name": "@vgmqt/access",
-  "version": "0.0.95",
+  "version": "1.0.0",
   "description": "A lightweight pack of accessible customizable elements for web development such as Select, Tabs, Checkboxes, etc. It built on HTML5 basic elements and behave itself the exact same way they do",
-  "main": "build/js/app.min.js",
+  "main": "build/js/AccessEssentials.min.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/VGMQT/access.git"
@@ -52,6 +52,7 @@
     "gulp-sourcemaps": "~2.6.5",
     "gulp-svg-sprite": "~1.5.0",
     "gulp-svgmin": "~2.2.0",
+    "gulp-umd": "^2.0.0",
     "gulp.spritesmith": "^6.10.1",
     "husky": "^3.0.0",
     "lint-staged": "^9.5.0",
@@ -62,11 +63,7 @@
     "stylelint-config-standard": "^19.0.0",
     "stylelint-order": "^3.0.1"
   },
-  "dependencies": {
-    "@vgmqt/access": "^0.0.95",
-    "gulp-umd": "^2.0.0",
-    "normalize.css": "~8.0.1"
-  },
+  "dependencies": {},
   "lint-staged": {
     "dev/js/**/*.js": [
       "pretty-quick --pattern './dev/js/**/*.js'",
