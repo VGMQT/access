@@ -54,3 +54,5 @@
       color: #03a9f4; }
   .access-select__label {
     display: block; }
+    .access-select__label:hover, .access-select__label:focus {
+      color: #03a9f4; }
