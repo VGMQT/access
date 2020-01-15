@@ -16,16 +16,17 @@ _AccEss_ is a lightweight pack of accessible customizable elements for web devel
 ## How it works
 1. Download (through `yarn`/`npm` or manually) and include:
 
-* A `JavaScript` file
+* `JavaScript`
 
-You can choose the one you need:
+You can choose what you need:
 
 `AccessEssentials.js` contains all _AccEss_ elements;
 
 In the `Separated` folder you can find every available _AccEss_ element and include them separately, if you want to use only some of them (or only one).
 
-* A `CSS` file  
-You can choose the one you need:
+* `CSS`
+
+You can choose what you need:
 
 `AccessEssentials.basic.css` contains all _AccEss_ elements basic styles, that are necessary for `JavaScript` to work;
 
