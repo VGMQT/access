@@ -34,9 +34,7 @@ In the `Separated` folder you can find styles for every available _AccEss_ eleme
 
 `.styled.css` files have extra styles for elements, so they would look more attractive.
 
-You need to add either `.basic.css` or `.styled.css` styles.
-
-`.styled.css` files already have `.basic.css` styles inside.
+You need to add either `.basic.css` or `.styled.css` styles (`.styled.css` files already have `.basic.css` styles inside).
 
 2. Create a markup, that would look like this:
 * For Select:
@@ -73,10 +71,10 @@ You can add some wrappers or change some things, but it is recommended to keep a
 
 3. Call the `AccessEssentials();` function or, if you downloaded and added specific elements files, call a dedicated function. For example, for Select it will be `AccessSelect();`.
 
-4. Test your element with mouse clicks and `Tab` navigation.
+4. Test your element or elements with mouse clicks and `Tab` navigation.
 
 ## Roadmap
-- Select (single option)
+- ~~Select (single option)~~ AccessSelect ✔️
 - Select (multiple options)
 - Tabs
 - Checkboxes
