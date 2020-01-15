@@ -10,9 +10,9 @@
 
 ## What is this?
 
-WORK IN PROGRESS!
-
 _AccEss_ is a lightweight pack of accessible customizable elements for web development such as Select, Tabs, Checkboxes, etc. It built on HTML5 basic elements and behave itself the exact same way they do.
+
+[**DEMO**](https://vgmqt.github.io/access/)
 
 ## How it works
 1. Download (through `yarn`/`npm` or manually) and include:
