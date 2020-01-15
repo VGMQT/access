@@ -105,3 +105,8 @@ blockquote {
 figure {
   margin: 0;
 }
+
+/* Project specific */
+h2 {
+  margin-bottom: 20px;
+}

@@ -5,6 +5,7 @@ module.exports = () => {
       .pipe($.gp.concatCss('vendor.css'))
       .pipe($.gp.csso())
       .pipe($.gp.rename('vendor.min.css'))
-      .pipe($.gulp.dest(`${$.config.build}/css`));
+      .pipe($.gulp.dest(`${$.config.build}/css`))
+      .pipe($.browserSync.stream());
   });
 };
