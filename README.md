@@ -5,6 +5,7 @@
 **[What is this?](#what-is-this)**  
 **[How it works](#how-it-works)**  
 **[Roadmap](#roadmap)**  
+**[This project's structure](#this-projects-structure)**  
 **[License](#license)**
 
 ## What is this?
@@ -37,7 +38,7 @@ In the `Separated` folder you can find styles for every available _AccEss_ eleme
 You need to add either `.basic.css` or `.styled.css` styles (`.styled.css` files already have `.basic.css` styles inside).
 
 2. Create a markup, that would look like this:
-* For Select:
+* For AccessSelect:
 ```
 <div class="access-select">
   <div class="access-select__option access-select__chosen-option">
@@ -67,9 +68,9 @@ You need to add either `.basic.css` or `.styled.css` styles (`.styled.css` files
   </ul>
 </div>
 ```
-You can add some wrappers or change some things, but it is recommended to keep all classes and elements as is. You can check `dev` folder for source files to know what exactly you can or can not change. You can even change some `JavaScript` code and `CSS` styles to match your situation more, but do not forget about accessibility, the very thing why _AccEss_ exists.
+You can add some wrappers or change some things, but it is recommended to keep all classes and elements as is. You can check `dev` folder for source files to know what exactly you can or can not change. You can even change some `JavaScript` code and `CSS` styles to match your situation more, but do not forget about **accessibility**, the very thing why _AccEss_ exists.
 
-3. Call the `AccessEssentials();` function or, if you downloaded and added specific elements files, call a dedicated function. For example, for Select it will be `AccessSelect();`.
+3. Call the `AccessEssentials();` function or, if you downloaded and added specific elements files, call a dedicated function. For example, for AccessSelect it will be `AccessSelect();`.
 
 4. Test your element or elements with mouse clicks and `Tab` navigation.
 
@@ -80,6 +81,9 @@ You can add some wrappers or change some things, but it is recommended to keep a
 - Checkboxes
 - Radio buttons
 - TBD
+
+## This project's structure
+This project's structure is built using [Gulp tasker](https://github.com/VGMQT/gulp-tasker).
 
 ## License
 
