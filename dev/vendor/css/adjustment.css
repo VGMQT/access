@@ -3,25 +3,10 @@
 }
 
 html {
-  /* Stick the footer with a dynamic height to the bottom of a page */
-  height: 100%;
-
-  /*  */
   font-size: 16px;
 }
 
-html,
 body {
-  width: 100%;
-}
-
-body {
-  /* Stick the footer with a dynamic height to the bottom of a page */
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-
-  /*  */
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
 }
@@ -120,22 +105,3 @@ blockquote {
 figure {
   margin: 0;
 }
-
-footer {
-  width: 100%;
-
-  /* Stick the footer with a dynamic height to the bottom of a page */
-  margin-top: auto;
-
-  /*  */
-}
-
-/* Fix IE11 display:flex on the body */
-header,
-main,
-section,
-footer {
-  flex-shrink: 0;
-}
-
-/*  */

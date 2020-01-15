@@ -1,7 +1,7 @@
 module.exports = () => {
   $.gulp.task('sass', () => {
     return $.gulp
-      .src(`${$.config.dev}/styles/AccessEssentials.scss`)
+      .src([`${$.config.dev}/styles/AccessEssentials.basic.scss`, `${$.config.dev}/styles/AccessEssentials.styled.scss`])
       .pipe($.gp.sassGlob())
       .pipe($.gp.sass())
       .on('error', $.gp.notify.onError({ title: 'Styles' }))
