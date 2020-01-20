@@ -10,34 +10,62 @@
 	</head>
 	<body>
 		<h1>AccEss: Accessible Essentials</h1>
-		<h2>AccessSelect: accessible select (single option)</h2>
-		<div class="access-select">
-			<div class="access-select__option access-select__chosen-option">
-				<p>Choose an option</p>
+		<section class="section">
+			<h2>AccessSelect: accessible select (single option)</h2>
+			<div class="access-select">
+				<div class="access-select__option access-select__chosen-option">Choose an option</div>
+				<ul class="access-select__list">
+					<li class="access-select__item">
+						<input class="access-select__option access-select__input" id="option1" type="radio" name="Select (single option)" value="Option #1">
+						<label class="access-select__option access-select__label" for="option1">Option #1</label>
+					</li>
+					<li class="access-select__item">
+						<input class="access-select__option access-select__input" id="option2" type="radio" name="Select (single option)" value="Option #2">
+						<label class="access-select__option access-select__label" for="option2">Option #2</label>
+					</li>
+					<li class="access-select__item">
+						<input class="access-select__option access-select__input" id="option3" type="radio" name="Select (single option)" value="Option #3">
+						<label class="access-select__option access-select__label" for="option3">Option #3</label>
+					</li>
+					<li class="access-select__item">
+						<input class="access-select__option access-select__input" id="option4" type="radio" name="Select (single option)" value="Option #4">
+						<label class="access-select__option access-select__label" for="option4">Option #4</label>
+					</li>
+					<li class="access-select__item">
+						<input class="access-select__option access-select__input" id="option5" type="radio" name="Select (single option)" value="Option #5">
+						<label class="access-select__option access-select__label" for="option5">Option #5</label>
+					</li>
+				</ul>
 			</div>
-			<ul class="access-select__list">
-				<li class="access-select__item">
-					<input class="access-select__option access-select__input" id="option1" type="radio" name="Select (single option)" value="Option #1">
-					<label class="access-select__option access-select__label" for="option1">Option #1</label>
-				</li>
-				<li class="access-select__item">
-					<input class="access-select__option access-select__input" id="option2" type="radio" name="Select (single option)" value="Option #2">
-					<label class="access-select__option access-select__label" for="option2">Option #2</label>
-				</li>
-				<li class="access-select__item">
-					<input class="access-select__option access-select__input" id="option3" type="radio" name="Select (single option)" value="Option #3">
-					<label class="access-select__option access-select__label" for="option3">Option #3</label>
-				</li>
-				<li class="access-select__item">
-					<input class="access-select__option access-select__input" id="option4" type="radio" name="Select (single option)" value="Option #4">
-					<label class="access-select__option access-select__label" for="option4">Option #4</label>
-				</li>
-				<li class="access-select__item">
-					<input class="access-select__option access-select__input" id="option5" type="radio" name="Select (single option)" value="Option #5">
-					<label class="access-select__option access-select__label" for="option5">Option #5</label>
-				</li>
-			</ul>
-		</div>
+		</section>
+		<section class="section">
+			<h2>AccessSelect: accessible select (multiple options)</h2>
+			<div class="access-select access-select_multiple">
+				<div class="access-select__option access-select__chosen-option">Choose an option</div>
+				<ul class="access-select__list">
+					<li class="access-select__item">
+						<input class="access-select__option access-select__input" id="option1" type="checkbox" name="Select (single option)" value="Option #1">
+						<label class="access-select__option access-select__label" for="option1">Option #1</label>
+					</li>
+					<li class="access-select__item">
+						<input class="access-select__option access-select__input" id="option2" type="checkbox" name="Select (single option)" value="Option #2">
+						<label class="access-select__option access-select__label" for="option2">Option #2</label>
+					</li>
+					<li class="access-select__item">
+						<input class="access-select__option access-select__input" id="option3" type="checkbox" name="Select (single option)" value="Option #3">
+						<label class="access-select__option access-select__label" for="option3">Option #3</label>
+					</li>
+					<li class="access-select__item">
+						<input class="access-select__option access-select__input" id="option4" type="checkbox" name="Select (single option)" value="Option #4">
+						<label class="access-select__option access-select__label" for="option4">Option #4</label>
+					</li>
+					<li class="access-select__item">
+						<input class="access-select__option access-select__input" id="option5" type="checkbox" name="Select (single option)" value="Option #5">
+						<label class="access-select__option access-select__label" for="option5">Option #5</label>
+					</li>
+				</ul>
+			</div>
+		</section>
 		<script src="js/AccessEssentials.js"></script>
 		<script type="text/javascript">AccessEssentials();</script>
 	</body>
