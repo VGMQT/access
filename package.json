@@ -1,6 +1,6 @@
 {
   "name": "@vgmqt/access",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "A lightweight pack of accessible customizable elements for web development such as Select, Tabs, Checkboxes, etc. It built on HTML5 basic elements and behave itself the exact same way they do",
   "main": "build/js/AccessEssentials.min.js",
   "repository": {
@@ -10,6 +10,8 @@
   "keywords": [
     "accessible",
     "accessibility",
+    "select",
+    "multiple select",
     "custom",
     "basic",
     "elements",

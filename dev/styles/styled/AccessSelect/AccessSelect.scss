@@ -7,13 +7,14 @@ $padding_option: 10px;
   width: 300px;
 
   &__option {
-    padding: $padding_option;
+    padding: $padding_option 25px $padding_option $padding_option;
     border: 2px solid transparent;
   }
 
   &__chosen-option {
     position: relative;
     border-color: $main_color;
+    background-color: white;
     cursor: pointer;
 
     &:hover {
@@ -74,6 +75,12 @@ $padding_option: 10px;
     &:hover,
     &:focus {
       + .access-select__label {
+        text-decoration: underline;
+      }
+    }
+
+    &.checked {
+      + .access-select__label {
         color: $accent_color;
       }
     }
@@ -81,10 +88,6 @@ $padding_option: 10px;
 
   &__label {
     display: block;
-
-    &:hover,
-    &:focus {
-      color: $accent_color;
-    }
+    background-color: white;
   }
 }
