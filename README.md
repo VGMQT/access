@@ -66,7 +66,7 @@ You need to add either `.basic.css` or `.styled.css` styles (`.styled.css` files
   </ul>
 </div>
 ```
-* For AccessSelect (multiple option):
+* For AccessSelect (multiple options):
 ```
 <div class="access-select access-select_multiple">
   <div class="access-select__option access-select__chosen-option">Choose an option</div>
