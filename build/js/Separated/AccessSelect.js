@@ -11,18 +11,23 @@
 
 var AccessSelect = function AccessSelect() {
   var activeClassnameString = 'list-is-open';
+  var checkedInputString = 'checked';
   var accessSelects = document.getElementsByClassName('access-select');
 
   var _loop = function _loop(i) {
     var thisAccessSelect = accessSelects[i];
     var thisChosenOption = thisAccessSelect.querySelector('.access-select__chosen-option');
-    var theseInputs = thisAccessSelect.getElementsByClassName('access-select__input');
+    var theseInputs = thisAccessSelect.getElementsByClassName('access-select__input'); // For a select with multiple options
+
+    var thisChosenOptionRemembered = thisChosenOption.innerHTML;
+    var multipleOptionsArray = [];
 
     var _loop2 = function _loop2(j) {
       var specificInput = theseInputs[j];
       document.addEventListener('click', function (e) {
         var isClickedInsideAccessSelect = thisAccessSelect.contains(e.target);
         var isClickedInsideChosenOption = thisChosenOption.contains(e.target);
+        var isClickedInsideInput = specificInput.contains(e.target);
 
         if (isClickedInsideChosenOption) {
           if (!thisChosenOption.classList.contains(activeClassnameString)) {
@@ -40,10 +45,46 @@ var AccessSelect = function AccessSelect() {
           thisChosenOption.classList.remove(activeClassnameString);
         }
 
-        ;
+        ; // Additional conditions for a select with multiple options
 
-        if (specificInput.checked) {
-          thisChosenOption.innerHTML = specificInput.value;
+        if (thisAccessSelect.classList.contains('access-select_multiple')) {
+          if (isClickedInsideInput) {
+            if (specificInput.checked) {
+              specificInput.classList.add(checkedInputString);
+
+              if (!multipleOptionsArray.includes(specificInput.value)) {
+                multipleOptionsArray.push(specificInput.value);
+                thisChosenOption.innerHTML = multipleOptionsArray.join(' ');
+              }
+
+              ;
+            } else {
+              specificInput.classList.remove(checkedInputString);
+              multipleOptionsArray.splice(multipleOptionsArray.indexOf(specificInput.value), 1);
+
+              if (multipleOptionsArray.length) {
+                thisChosenOption.innerHTML = multipleOptionsArray.join(' ');
+              } else {
+                thisChosenOption.innerHTML = thisChosenOptionRemembered;
+              }
+
+              ;
+            }
+
+            ;
+          }
+
+          ;
+        } else {
+          // For a select with single option
+          if (specificInput.checked) {
+            specificInput.classList.add(checkedInputString);
+            thisChosenOption.innerHTML = specificInput.value;
+          } else {
+            specificInput.classList.remove(checkedInputString);
+          }
+
+          ;
         }
 
         ;

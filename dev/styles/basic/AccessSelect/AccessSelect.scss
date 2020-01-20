@@ -41,6 +41,12 @@ $accent_color: #03a9f4;
     &:hover,
     &:focus {
       + .access-select__label {
+        text-decoration: underline;
+      }
+    }
+
+    &.checked {
+      + .access-select__label {
         color: $accent_color;
       }
     }

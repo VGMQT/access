@@ -23,4 +23,6 @@
     width: 100%;
     height: 100%; }
     .access-select__input:hover + .access-select__label, .access-select__input:focus + .access-select__label {
+      text-decoration: underline; }
+    .access-select__input.checked + .access-select__label {
       color: #03a9f4; }

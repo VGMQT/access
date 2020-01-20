@@ -5,12 +5,21 @@ block title
 
 block content
   h1 AccEss: Accessible Essentials
-  h2 AccessSelect: accessible select (single option)
-  .access-select
-    .access-select__option.access-select__chosen-option
-      p Choose an option
-    ul.access-select__list
-      each id, option in singleSelect
-        li.access-select__item
-          input(id=id type="radio", name="Select (single option)", value=option).access-select__option.access-select__input
-          label(for=id).access-select__option.access-select__label= option
+  section.section
+    h2 AccessSelect: accessible select (single option)
+    .access-select
+      .access-select__option.access-select__chosen-option Choose an option
+      ul.access-select__list
+        each id, option in singleSelect
+          li.access-select__item
+            input(id=id type="radio", name="Select (single option)", value=option).access-select__option.access-select__input
+            label(for=id).access-select__option.access-select__label= option
+  section.section
+    h2 AccessSelect: accessible select (multiple options)
+    .access-select.access-select_multiple
+      .access-select__option.access-select__chosen-option Choose an option
+      ul.access-select__list
+        each id, option in singleSelect
+          li.access-select__item
+            input(id=id type="checkbox", name="Select (single option)", value=option).access-select__option.access-select__input
+            label(for=id).access-select__option.access-select__label= option
